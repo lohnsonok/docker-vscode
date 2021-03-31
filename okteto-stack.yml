@@ -1,6 +1,6 @@
 name: app
 services:
-  vote:
+  code:
     public: true
     build: code
     replicas: 2
