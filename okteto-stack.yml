@@ -9,6 +9,6 @@ services:
       - 3000
       - 3001
     resources:
-      cpu: 1000m
-      memory: 3Gi
-      storage: 5Gi
+      cpu: 5000m
+      memory: 15Gi
+      storage: 3Gi
