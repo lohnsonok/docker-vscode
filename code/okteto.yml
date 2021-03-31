@@ -1,11 +1,5 @@
 name: code
 workdir: /developer
-environment:
-  - FLASK_ENV=development
-  - PATH=/developer/.npm/bin:$PATH
-  - NODE_PATH=/developer/.npm/lib/node_modules:$NODE_PATH
-  - BROWSER=/developer/.local/share/firefox/firefox-bin
-  - SHELL=/bin/bash
 forward:
   - 5000:5000
   - 3000:3000

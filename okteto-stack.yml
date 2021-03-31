@@ -3,7 +3,7 @@ services:
   code:
     public: true
     build: code
-    replicas: 2
+    replicas: 5
     ports:
       - 5000
       - 3000
@@ -12,9 +12,4 @@ services:
       cpu: 1000m
       memory: 3Gi
       storage: 5Gi
-    volumes: 
-      ["/developer/.config/Code",
-      "/developer/.vscode",
-      "/developer/.ssh",
-      "/developer/project"]
     entrypoint: /developer/bin/start-shell
