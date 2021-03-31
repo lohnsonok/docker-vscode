@@ -13,10 +13,10 @@ services:
       memory: 7064Gi
       storage: 4Gi
     volumes: 
-      /developer/.config/Code
-      /developer/.vscode
-      /developer/.ssh"
-      /developer/project
+      ["/developer/.config/Code",
+      "/developer/.vscode,
+      "/developer/.ssh",
+      "/developer/project"]
     entrypoint: /developer/bin/start-shell
 
   redis:
