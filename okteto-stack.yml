@@ -9,9 +9,9 @@ services:
       - 3000
       - 3001
     resources:
-      cpu: 3500m
-      memory: 7064Gi
-      storage: 3Gi
+      cpu: 2000m
+      memory: 3Gi
+      storage: 5Gi
     volumes: 
       ["/developer/.config/Code",
       "/developer/.vscode",
