@@ -9,23 +9,12 @@ services:
       - 3000
       - 3001
     resources:
-      cpu: 1000m
+      cpu: 3500m
       memory: 7064Gi
-      storage: 4Gi
+      storage: 3Gi
     volumes: 
       ["/developer/.config/Code",
       "/developer/.vscode",
       "/developer/.ssh",
       "/developer/project"]
     entrypoint: /developer/bin/start-shell
-
-  redis:
-    image: redis
-    ports:
-      - 6379
-    resources:
-      cpu: 100m
-      memory: 128Mi
-      storage: 1Gi
-    volumes:
-      - /data
