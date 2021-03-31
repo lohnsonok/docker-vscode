@@ -1,8 +1,8 @@
-name: voting-app
+name: app
 services:
   vote:
     public: true
-    build: vote
+    build: code
     replicas: 2
     ports:
       - 5000
