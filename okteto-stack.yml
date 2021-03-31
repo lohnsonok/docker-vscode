@@ -12,4 +12,3 @@ services:
       cpu: 1000m
       memory: 3Gi
       storage: 5Gi
-    entrypoint: /developer/bin/start-shell
