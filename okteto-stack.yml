@@ -9,10 +9,11 @@ services:
       - 3000
       - 3001
     resources:
-      cpu: 100m
-      memory: 128Mi
+      cpu: 1000m
+      memory: 7064Gi
       storage: 4Gi
-    volumes: /developer/.config/Code
+    volumes: 
+      /developer/.config/Code
       /developer/.vscode
       /developer/.ssh"
       /developer/project
