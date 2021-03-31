@@ -1,0 +1,30 @@
+name: voting-app
+services:
+  vote:
+    public: true
+    build: vote
+    replicas: 2
+    ports:
+      - 5000
+      - 3000
+      - 3001
+    resources:
+      cpu: 100m
+      memory: 128Mi
+      storage: 4Gi
+    volumes: /developer/.config/Code
+      /developer/.vscode
+      /developer/.ssh"
+      /developer/project
+    entrypoint: /developer/bin/start-shell
+
+  redis:
+    image: redis
+    ports:
+      - 6379
+    resources:
+      cpu: 100m
+      memory: 128Mi
+      storage: 1Gi
+    volumes:
+      - /data
